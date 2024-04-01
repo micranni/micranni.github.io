@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: Poppins;
+    
+    color: #F0F0F0;
+    
+}
+
+body{
+    margin-left: 400px;
+    margin-right: 400px;
+    background-color: #333333;
+}
+
+.about-me{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    
+}
+
+.text-elements{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px;
+    padding: 5px;
+}
+
+.text-elements h1{
+    font-size: 55px;
+}
+
+.text-elements p{
+    width: 60%;
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+
+.text-elements span{
+    margin: 3px;
+    font-size: 15px;
+    
+}
+
+a:hover{
+    color: #FFA500;
+}
+
+.container img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 500px;
+    
+}
+
+.stack {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.icon-container img{
+    width: 100px;
+    height: 100px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px;
+    margin-right: 200px;
+}
+
+.logo img{
+    width: 50px;
+    background-color: white;
+    border-radius: 60%;
+    
+}
+
+button{
+    width: 150px;
+    height: 30px;
+    margin-top: 30px;
+    border-radius: 50px;
+    background-color: #333333;
+}
+
+button:hover{
+    color:#FFA500;
+}
+
+footer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden; /* Hide the overflow */
+    height: 200px;
+    margin-bottom: 30px;
+  }
+  
+  .carousel::before, .carousel::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100px; /* Adjust the width based on your desired blur effect size */
+    z-index: 2;
+    pointer-events: none; /* Prevents the pseudo-elements from capturing mouse events */
+  }
+  
+  .carousel::before {
+    left: 0;
+    background: linear-gradient(to right, #333333 0%, transparent 100%);
+  }
+  
+  .carousel::after {
+    right: 0;
+    background: linear-gradient(to left, #333333 0%, transparent 100%);
+  }
+
+  .stack {
+    display: flex; /* Line up icons horizontally */
+    will-change: transform; /* Optimize for animations */
+  }
+  
+  .icon-container {
+    animation: fadeIn 2s ease-in-out forwards; /* Adjust duration as needed */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .footer{
+    background-color: #4F4F4F;
+    padding: 20px;
+    border-radius: 50px;
+    display: flex; /* Enables Flexbox layout */
+    align-items: center; /* Aligns children at the start of the cross axis */
+    justify-content: space-between; /* Distributes space between children */
+    flex-wrap: wrap; /* Allows children to wrap to next line if not enough space */
+     /* Optional: adds space between children */
+    height: 150px;
+  }
+  .contact-text-elements{
+   
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .contact-text-elements h2{
+    color:#FFA500;
+   
+  }
+
+  .contact-icon-container img{
+    
+    width: 50px;
+    height: 50px;
+    
+  }
+
+  .contact-icons{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 30px;
+    
+  }
+
+  .newcontacttext h2{
+    color:#FFA500;
+  }
+  
+  a img {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1);
+  }
+  
+  a:hover img {
+    transform: scale(1.2); /* Adjust scale value as needed */
+  }
+  
+  
+  
