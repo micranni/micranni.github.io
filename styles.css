@@ -204,5 +204,20 @@ footer{
     transform: scale(1.2); /* Adjust scale value as needed */
   }
   
+  @media (max-width: 768px) {
+    .footer div, .contact-icon-container {
+        width: 100%;
+        text-align: center;
+    }
+  }
   
+  @media (min-width: 769px) {
+    .footer {
+        display: flex;
+        justify-content: space-between;
+    }
+    .contact-text-elements, .newcontacttext {
+        flex: 1;
+    }
+  }
   
